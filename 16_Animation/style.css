@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 2s all easy in ease-in-out;
+}
+
+.circle {
+  height: 200px;
+  width: 200px;
+  border: 2px dotted black;
+  margin: 100px auto;
+  animation-name: circle;
+  animation-duration: 5s;
+  background-color: violet;
+}
+
+@keyframes circle {
+  from {
+    transform: rotate(0deg);
+    border-radius: 25%;
+  }
+  to {
+    transform: rotate(360deg);
+    border-radius: 50%;
+    background-color: sienna;
+    transform: scale(1.8);
+  }
+}
+
+.contaner {
+  height: 1000px;
+  width: 1000px;
+  border: 4px dotted black;
+  margin: 200px auto;
+}
+
+.box {
+  height: 300px;
+  width: 300px;
+  border: 2px dotted black;
+  animation-name: move;
+  animation-duration: 5s;
+  animation-iteration-count: 2;
+  /* border-radius: 50%; */
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+    background-color: violet;
+  }
+
+  25% {
+    transform: translate(690px, 0);
+    background-color: sienna;
+  }
+
+  50% {
+    transform: translate(690px, 690px);
+    background-color: blue;
+  }
+
+  75% {
+    transform: translate(0, 690px);
+    background-color: brown;
+  }
+
+  100% {
+    transform: translate(0, 0);
+    background-color: turquoise;
+  }
+}
+
+.btn {
+  height: 60px;
+  width: 150px;
+  border: none;
+  margin: auto;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+  margin-bottom: 20px;
+  animation-name: btn;
+  animation-duration: 2s;
+  animation-iteration-count: 3;
+  animation-fill-mode: forwards;
+}
+
+.div {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+@keyframes btn {
+  from {
+    transform: translate(1);
+  }
+  to {
+    transform: translate(1.1);
+    box-shadow:
+      rgba(193, 7, 7, 0.25) 0px 54px 55px,
+      rgba(220, 77, 15, 0.12) 0px -12px 30px,
+      rgba(17, 225, 232, 0.12) 0px 4px 6px,
+      rgba(61, 18, 190, 0.17) 0px 12px 13px,
+      rgba(255, 5, 151, 0.09) 0px -3px 5px;
+  }
+}
