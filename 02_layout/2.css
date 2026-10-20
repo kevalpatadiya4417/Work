@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 800px;
+    width: 800px;
+    border: 2px solid black;
+    margin: 100px auto;
+    display: grid;
+    grid-template-areas: "hdr hdr hdr hdr"
+                         "sbr main main main"
+                         "sbr main main main"
+                         "ftr ftr ftr ftr";
+}
+
+.box{
+    border: 3px dotted black;
+    text-align: center;
+}
+
+#box-1{
+    background-image: linear-gradient(to left top, red, green, blue);
+    grid-area: hdr;
+}
+
+#box-2{
+    background-image: conic-gradient(from 90deg, purple, orange);
+    grid-area: sbr;
+}
+
+#box-3{
+    background-image: radial-gradient( green, red);
+    grid-area: main;
+}
+
+#box-4{
+    background-image: linear-gradient(to right top, blue, green, red);
+    grid-area: ftr;
+}

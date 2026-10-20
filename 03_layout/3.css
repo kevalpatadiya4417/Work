@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 2000px;
+  width: 2000px;
+  border: 2px solid black;
+  display: grid;
+  margin: 100px auto;
+  gap: 50px;
+  grid-template-areas: "hdr hdr hdr hdr"
+                        "sbr main main main"
+                        "sbr main main main"
+                        "ftr ftr ftr ftr";
+}
+
+.box {
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.box img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+#box-1 {
+  grid-area: hdr;
+}
+
+#box-2{
+    grid-area: sbr;
+}
+
+#box-3{
+    grid-area: main;
+}
+
+#box-4{
+    grid-area: ftr;
+}
+
