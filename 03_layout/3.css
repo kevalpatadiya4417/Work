@@ -5,8 +5,8 @@
 }
 
 .container {
-  height: 2000px;
-  width: 2000px;
+  height: 1000px;
+  width: 1000px;
   border: 2px solid black;
   display: grid;
   margin: 100px auto;
