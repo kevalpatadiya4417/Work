@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.fixed-box{
+    height: 500px;
+    width: 500px;
+    border: 2px solid black;
+}
+
+.parent{
+    height: 500px;
+    width: 500px;
+    border: 2px solid black;
+} 
+
+.child{
+    height: 50%;
+    width: 50%;
+    border: 2px solid black;
+}
+
+.box{
+    height: 10vh;
+    width: 10vh;
+    border: 2px solid black;
+}
+
+.big{
+    height: 500px;
+    width: 500px;
+    border: 2px solid black;
+    font-size: 10px;
+}
+
+.font{
+    font-size: 3em;
+}
+
+.rem{
+    font-size: 5rem;
+}

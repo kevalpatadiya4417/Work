@@ -1,0 +1,23 @@
+:root{
+    --firstcolor: #e40ddd;
+    --secondcolr: #ebcb17;
+    --thirdcolor: #0baafa;
+    --fourcolor: #ff1717;
+}
+
+.heading{
+    color: var(--secondcolr);
+}
+
+.btn{
+    background-color: var(--firstcolor);
+}
+
+.heading2{
+    color: var(--thirdcolor);
+}
+
+.KP{
+    background-color: var(--fourcolor);
+
+}
